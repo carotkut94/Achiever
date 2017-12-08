@@ -56,6 +56,9 @@
 		E1F23A691FDAFF15006C8588 /* Achiever */ = {
 			isa = PBXGroup;
 			children = (
+				E1F23A821FDAFF30006C8588 /* Extensions */,
+				E1F23A811FDAFF2B006C8588 /* View */,
+				E1F23A801FDAFF22006C8588 /* Controller */,
 				E1F23A6A1FDAFF15006C8588 /* AppDelegate.swift */,
 				E1F23A6C1FDAFF15006C8588 /* ViewController.swift */,
 				E1F23A6E1FDAFF15006C8588 /* Main.storyboard */,
@@ -65,6 +68,27 @@
 				E1F23A711FDAFF15006C8588 /* Achiever.xcdatamodeld */,
 			);
 			path = Achiever;
+			sourceTree = "<group>";
+		};
+		E1F23A801FDAFF22006C8588 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E1F23A811FDAFF2B006C8588 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E1F23A821FDAFF30006C8588 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
