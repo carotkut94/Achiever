@@ -21,7 +21,7 @@
         <!--Achive Goals-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AchiveGoals" customModule="Achiever" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="goalsVC" id="BYZ-38-t0r" customClass="AchiveGoals" customModule="Achiever" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cvc-DF-f0j"/>
                         <viewControllerLayoutGuide type="bottom" id="PCO-7V-Y8L"/>
@@ -54,7 +54,7 @@
                                         <rect key="frame" x="325" y="29" width="35" height="32"/>
                                         <state key="normal" image="addGoal"/>
                                         <connections>
-                                            <segue destination="RD7-Ry-c9o" kind="presentation" id="NdH-Om-yP6"/>
+                                            <action selector="addGoals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7aW-BV-Sua"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -187,7 +187,7 @@
         <!--Create GoalsVC-->
         <scene sceneID="azL-Om-FPo">
             <objects>
-                <viewController id="RD7-Ry-c9o" customClass="CreateGoalsVC" customModule="Achiever" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="createGoalVC" id="RD7-Ry-c9o" customClass="CreateGoalsVC" customModule="Achiever" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yBp-K5-6vc"/>
                         <viewControllerLayoutGuide type="bottom" id="hO6-iF-ULs"/>

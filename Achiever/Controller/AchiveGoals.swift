@@ -21,7 +21,11 @@ class AchiveGoals: UIViewController {
     
     
     @IBAction func addGoals(_ sender: Any) {
-        
+        guard let createGoalVC = storyboard?.instantiateViewController(withIdentifier: "createGoalVC")else {
+            print("Error")
+            return
+        }
+        presentDetails(createGoalVC)
     }
 }
 
