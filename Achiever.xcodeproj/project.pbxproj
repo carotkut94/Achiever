@@ -11,6 +11,9 @@
 		E17C44FA1FDC045C00DE9B4C /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17C44F91FDC045C00DE9B4C /* GoalType.swift */; };
 		E17C44FC1FDC0B4300DE9B4C /* CreateGoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17C44FB1FDC0B4300DE9B4C /* CreateGoalsVC.swift */; };
 		E17C44FE1FDC154100DE9B4C /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17C44FD1FDC154100DE9B4C /* UIViewControllerExt.swift */; };
+		E17C45001FDC1B9700DE9B4C /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17C44FF1FDC1B9700DE9B4C /* UIViewExt.swift */; };
+		E17C45021FDC1EDF00DE9B4C /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17C45011FDC1EDF00DE9B4C /* UIButtonExt.swift */; };
+		E17C45041FDC238700DE9B4C /* FinishGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17C45031FDC238700DE9B4C /* FinishGoalVC.swift */; };
 		E1F23A6B1FDAFF15006C8588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F23A6A1FDAFF15006C8588 /* AppDelegate.swift */; };
 		E1F23A6D1FDAFF15006C8588 /* AchiveGoals.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F23A6C1FDAFF15006C8588 /* AchiveGoals.swift */; };
 		E1F23A701FDAFF15006C8588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F23A6E1FDAFF15006C8588 /* Main.storyboard */; };
@@ -24,6 +27,9 @@
 		E17C44F91FDC045C00DE9B4C /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
 		E17C44FB1FDC0B4300DE9B4C /* CreateGoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalsVC.swift; sourceTree = "<group>"; };
 		E17C44FD1FDC154100DE9B4C /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		E17C44FF1FDC1B9700DE9B4C /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		E17C45011FDC1EDF00DE9B4C /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
+		E17C45031FDC238700DE9B4C /* FinishGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishGoalVC.swift; sourceTree = "<group>"; };
 		E1F23A671FDAFF15006C8588 /* Achiever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Achiever.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F23A6A1FDAFF15006C8588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1F23A6C1FDAFF15006C8588 /* AchiveGoals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchiveGoals.swift; sourceTree = "<group>"; };
@@ -83,6 +89,7 @@
 			children = (
 				E1F23A6C1FDAFF15006C8588 /* AchiveGoals.swift */,
 				E17C44FB1FDC0B4300DE9B4C /* CreateGoalsVC.swift */,
+				E17C45031FDC238700DE9B4C /* FinishGoalVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -98,7 +105,9 @@
 		E1F23A821FDAFF30006C8588 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E17C44FF1FDC1B9700DE9B4C /* UIViewExt.swift */,
 				E17C44FD1FDC154100DE9B4C /* UIViewControllerExt.swift */,
+				E17C45011FDC1EDF00DE9B4C /* UIButtonExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -187,8 +196,11 @@
 				E17C44FA1FDC045C00DE9B4C /* GoalType.swift in Sources */,
 				E1F23A731FDAFF15006C8588 /* Achiever.xcdatamodeld in Sources */,
 				E1F23A6D1FDAFF15006C8588 /* AchiveGoals.swift in Sources */,
+				E17C45001FDC1B9700DE9B4C /* UIViewExt.swift in Sources */,
 				E1F23A6B1FDAFF15006C8588 /* AppDelegate.swift in Sources */,
 				E17C44FE1FDC154100DE9B4C /* UIViewControllerExt.swift in Sources */,
+				E17C45021FDC1EDF00DE9B4C /* UIButtonExt.swift in Sources */,
+				E17C45041FDC238700DE9B4C /* FinishGoalVC.swift in Sources */,
 				E17C44FC1FDC0B4300DE9B4C /* CreateGoalsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
