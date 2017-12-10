@@ -31,7 +31,7 @@ class CreateGoalsVC: UIViewController, UITextViewDelegate {
                 return
             }
             finishGoalVC.initData(description: goalTextField.text!, type: goalType)
-            presentDetails(finishGoalVC)
+            presentingViewController?.presentOtherViewController(finishGoalVC)
         }
     }
     
