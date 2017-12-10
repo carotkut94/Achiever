@@ -14,12 +14,25 @@ let appDelegate = UIApplication.shared.delegate as? AppDelegate
 class AchiveGoals: UIViewController {
 
     @IBOutlet weak var tabelView: UITableView!
+    var goals: [Goal] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         tabelView.delegate = self
         tabelView.dataSource = self
-        tabelView.isHidden = false
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        fetchData { (finished) in
+            if finished {
+                if goals.count > 0{
+                    tabelView.isHidden = false
+                }else{
+                    tabelView.isHidden = true
+                }
+            }
+        }
+        tabelView.reloadData()
     }
     
     
@@ -39,14 +52,32 @@ extension AchiveGoals : UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return goals.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tabelView.dequeueReusableCell(withIdentifier: "goalCell") as? GoalCell else {
             return UITableViewCell()
         }
-        cell.configureCell(description: "Eat salad for 4 weeks daily", type: .longTerm, goalProgress: 2)
+        let goal = goals[indexPath.row]
+        cell.configureCell(goal: goal)
         return cell
     }
 }
+
+extension AchiveGoals{
+    func fetchData(completion : (_ finished:Bool)->()){
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else{
+            return
+        }
+        let fetchRequest = NSFetchRequest<Goal>(entityName: "Goal")
+        do{
+            try goals =  managedContext.fetch(fetchRequest)
+            completion(true)
+        }catch{
+            debugPrint("Error occured during fetching data \(error.localizedDescription )")
+            completion(false)
+        }
+    }
+}
+
